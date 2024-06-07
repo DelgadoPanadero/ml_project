@@ -89,7 +89,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: List files in current directory
-        run: find / -name Dockerfile
+        run: find / -name custom_model.py
 
       - name: PWD directory
         run: pwd |

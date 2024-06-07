@@ -91,6 +91,10 @@ jobs:
       - name: List files in current directory
         run: ls -la
 
+      - name: PWD directory
+        run: pwd |
+          ls -lrt
+
       - name: List files in root directory
         run: ls -la /
         

@@ -88,6 +88,12 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
+      - name: List files in current directory
+        run: ls -la
+
+      - name: List files in root directory
+        run: ls -la /
+        
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
       - name: Build and push Docker image

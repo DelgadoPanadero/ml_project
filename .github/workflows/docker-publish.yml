@@ -89,7 +89,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: List files in current directory
-        run: ls -la /home
+        run: find / -name Dockerfile
 
       - name: PWD directory
         run: pwd |

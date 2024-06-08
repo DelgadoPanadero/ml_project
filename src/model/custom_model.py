@@ -38,7 +38,7 @@ class CustomModel():
         return self._features
 
 
-    def train(self, X: pd.DataFrame, y: pd.Series):
+    def fit(self, X: pd.DataFrame, y: pd.Series):
 
 
 
